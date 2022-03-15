@@ -14,8 +14,10 @@ def app(qtbot):
 def test_label(app):
     assert app.text_label.text() == "Hello World!"
 
+
 def test_window_title(app):
     app.windowTitle() == "PySide6 Example"
+
 
 def test_label_after_click(app, qtbot):
     qtbot.mouseClick(app.button, QtCore.Qt.LeftButton)

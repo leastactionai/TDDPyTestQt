@@ -1,0 +1,22 @@
+* NOTES
+
+** Step 1
+1. Create a PyCharm project using ~pipenv~
+2. Install ~pyside6~, ~pytest~ and ~pytest-qt~
+3. Simple HelloWorld test fixture
+
+** Step 2
+1. Type up Story 1
+2. Type up Task 1-1
+3. Type up Tests 1, 2, 3, 4 in Task 1-1
+4. Complete the coding and testing of Task 1-1
+
+** Step 3
+1. Type up Task 1-2
+2. Type up Test 5, 6 in Task 1-2
+3. Complete the coding and testing of Task 1-2
+
+** Step 4
+1. Type up Task 1-3
+2. Type up Test 7,8 in Task 1-3
+3. Complete the coding and testing of Task 1-3
