@@ -5,11 +5,18 @@
 2. Install ~pyside6~, ~pytest~ and ~pytest-qt~
 3. Simple HelloWorld test fixture
 
-** Step 2
-1. Type up Story 1
-2. Type up Task 1-1
-3. Type up Tests 1, 2, 3, 4 in Task 1-1
-4. Complete the coding and testing of Task 1-1
+** Step 2 [2/3]
+- [X] Type up Story 1
+  Provide a way to keep a list of movies and a way to add movies to it. Ordering of the list isn't a concern
+- [X] Type up Task 1-1
+  Make a container for movies with a way to add to it. Doesn't have to be ordered or sorted.
+- [ ] Complete the coding and testing of tests 1, 2, 3, 4 in Task 1-1 [0/4]
+  - [ ] Test 1 : An empty list should have a size 0
+     
+    
+  - [ ] Test 2
+  - [ ] Test 3
+  - [ ] Test 4
 
 ** Step 3
 1. Type up Task 1-2
