@@ -1,4 +1,4 @@
 class MovieList():
 
-    def size(self):
-        return None
+    def size(self) -> int:
+        return 0
