@@ -5,24 +5,29 @@ from movie import Movie
 
 
 @pytest.fixture()
-def setup():
-    print("------------ SETUP ----------------")
+def movie_list():
     movie_list = MovieList()
-    star_wars = Movie()
-    star_trek = Movie()
-    yield movie_list, star_wars, star_trek
-    print("----- TEARDOWN -----")
+    yield movie_list
 
+@pytest.fixture()
+def star_wars():
+    star_wars = Movie()
+    yield star_wars
+
+@pytest.fixture()
+def star_trek():
+    star_trek = Movie()
+    yield star_trek
 
 class TestMovieList:
-    def test_empty_list_size(self, setup):
-        assert setup[0].size() == 0, "Size of empty movie list should be 0."
+    def test_empty_list_size(self, movie_list):
+        assert movie_list.size() == 0, "Size of empty movie list should be 0."
 
-    def test_size_after_adding_one(self, setup):
-        setup[0].add(setup[1])
-        assert setup[0].size() == 1, "Size of one item list should be 1."
+    def test_size_after_adding_one(self, movie_list, star_wars):
+        movie_list.add(star_wars)
+        assert movie_list.size() == 1, "Size of one item list should be 1."
 
-    def test_size_after_adding_two(self, setup):
-        setup[0].add(setup[1])
-        setup[0].add(setup[2])
-        assert setup[0].size() == 2, "Size of two item list should be 2."
+    def test_size_after_adding_two(self, movie_list, star_wars, star_trek):
+        movie_list.add(star_wars)
+        movie_list.add(star_trek)
+        assert movie_list.size() == 2, "Size of two item list should be 2."
