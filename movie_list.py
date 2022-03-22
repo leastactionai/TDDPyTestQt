@@ -6,5 +6,5 @@ class MovieList():
         return self.number_of_movies
 
     def add(self, movie_to_add) -> None:
-        self.number_of_movies = 1
+        self.number_of_movies += 1
 
