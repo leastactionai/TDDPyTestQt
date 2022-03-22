@@ -10,11 +10,9 @@
   Provide a way to keep a list of movies and a way to add movies to it. Ordering of the list isn't a concern
 - [X] Type up Task 1-1
   Make a container for movies with a way to add to it. Doesn't have to be ordered or sorted.
-- [ ] Complete the coding and testing of tests 1, 2, 3, 4 in Task 1-1 [0/4]
-  - [ ] Test 1 : An empty list should have a size 0
-     
-    
-  - [ ] Test 2
+- [-] Complete the coding and testing of tests 1, 2, 3, 4 in Task 1-1 [1/4]
+  - [X] Test 1 : An empty list should have a size 0
+  - [ ] Test 2 : Adding a movie to an empty list should result in a list with a size of 1
   - [ ] Test 3
   - [ ] Test 4
 
