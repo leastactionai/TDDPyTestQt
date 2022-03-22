@@ -3,6 +3,7 @@ import pytest
 from movie_list import MovieList
 from movie import Movie
 
+
 @pytest.fixture()
 def setup():
     print("------------ SETUP ----------------")
@@ -13,7 +14,7 @@ def setup():
     print("----- TEARDOWN -----")
 
 
-class TestMovieList():
+class TestMovieList:
     def test_empty_list_size(self, setup):
         assert setup[0].size() == 0, "Size of empty movie list should be 0."
 
